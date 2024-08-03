@@ -150,4 +150,4 @@ msg: db "Oh boy do I sure love assembly!", 0
 
   ; pad the bootloader to 510 bytes with zeros
 	times 510-($-$$) db 0
-	dw 0xAA55
+	dw 0xAA55 ; this line tells to BIOS that this 512 byte is bootloader code
